@@ -45,8 +45,8 @@ test for memmove
 
 int	main()
 {
-	char str1[] = "Geeks";  // Array of size 100 
-	char str2[]  = "Quiz";  // Array of size 5 
+	char str1[] = "Geeks"; 
+	char str2[]  = "Quiz"; 
   
  	puts("str1 before memmove "); 
 	puts(str1); 
@@ -55,7 +55,7 @@ int	main()
   
 	puts("\nstr1 after memmove "); 
 	puts(str1); 
-  
+ 
 	return 0; 
 }
 
