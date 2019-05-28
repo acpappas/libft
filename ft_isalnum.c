@@ -1,24 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/24 08:29:16 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/28 08:47:18 by apappas          ###   ########.fr       */
+/*   Created: 2019/05/28 09:16:29 by apappas           #+#    #+#             */
+/*   Updated: 2019/05/28 09:20:18 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-size_t	strlen(const char *s)
-
+int ft_isalnum(int c)
 {
-	size_t i;
-	
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-return (i);
+	if (ft_isdigit(c) && ft_isalpha(c))
+		return (0);
+	else
+		return();
 }

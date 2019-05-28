@@ -1,24 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/24 08:29:16 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/28 08:47:18 by apappas          ###   ########.fr       */
+/*   Created: 2019/05/28 09:20:36 by apappas           #+#    #+#             */
+/*   Updated: 2019/05/28 09:23:28 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-size_t	strlen(const char *s)
-
+int	ft_isascii(int c)
 {
-	size_t i;
-	
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-return (i);
+	if (c is between 0 and octal 0177 inclusive)
+		return 0?
+	else 
+		return?
 }

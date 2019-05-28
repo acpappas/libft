@@ -1,24 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/24 08:29:16 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/28 08:47:18 by apappas          ###   ########.fr       */
+/*   Created: 2019/05/28 09:23:46 by apappas           #+#    #+#             */
+/*   Updated: 2019/05/28 09:25:28 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
-
-size_t	strlen(const char *s)
-
+int	isprint(int c)
 {
-	size_t i;
-	
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-return (i);
-}
+	if c is any printing character
+
