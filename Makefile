@@ -9,6 +9,8 @@ SRCS =
 OUT =
 
 all:$(NAME):
-	
-CC=gcc
-CFLAGS=-Wall-Wextra-Werror
+
+so:
+	gcc -c ft_*.c -Wall -Westra -Werror
+	gcc -shared -o libft.so -fPIC ft*.o
+	rm*.o
