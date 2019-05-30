@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_intlen.c                                        :+:      :+:    :+:   */
+/*   ft_memdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/30 11:24:23 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/30 11:25:33 by apappas          ###   ########.fr       */
+/*   Created: 2019/05/30 12:11:21 by apappas           #+#    #+#             */
+/*   Updated: 2019/05/30 12:17:58 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_intlen(int nbr)
-{
-	int i;
+#include <string.h>
+#include <stdlib.h>
 
-	i = 0;
-if (nbr < 0)
+void	ft_memdel(void **ap)
 {
-	nbr *= -1;
-	i++;
-}
-while (nbr != 0)
-{
-	nbr /= 10;
-	i++;
-}
-return (i);
+	if (*ap != '\0')
+	{
+		free(*ap);
+		*ap = NULL;
+	}
+return(0);
 }
