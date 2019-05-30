@@ -6,19 +6,18 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 08:29:16 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/28 08:47:18 by apappas          ###   ########.fr       */
+/*   Updated: 2019/05/29 13:52:10 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
 size_t	strlen(const char *s)
-
 {
 	size_t i;
-	
+
 	i = 0;
 	while (s[i] != '\0')
 		i++;
-return (i);
+	return (i);
 }
