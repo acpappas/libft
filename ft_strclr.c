@@ -1,49 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strclr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/30 11:26:23 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/30 16:10:19 by apappas          ###   ########.fr       */
+/*   Created: 2019/05/30 16:12:34 by apappas           #+#    #+#             */
+/*   Updated: 2019/05/30 16:14:53 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-int	ft_sign(char nptr)
+void	ft_strclr(char *s)
 {
-	if (nptr == '-' || nptr == '+')
-		if (nptr == '-')
-			return (-1);
-		return(1);
-}
-
-int	ft_atoi(const char *nptr)
-{
-	int res;
 	int i;
-	int neg;
 
 	i = 0;
-	res = 0;
-	neg = 1;
-
-if (nptr[i] == '-' || nptr[i] == '+')
+	while (s[i] != '\0')
 	{
-		neg = ft_sign(*nptr);
+		s[i] = '\0';
 		i++;
 	}
-while (nptr[i] != '\0' && nptr[i] >= '0' && nptr[i] <= '9')
-	{
-		while (nptr[i] != '\0')
-		{
-			res *= 10;
-			res = res + nptr[i] - '0';
-			i++;
-		}
-		res *= neg;
-		return (res);
-	}
+	return (0);
 }

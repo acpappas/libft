@@ -1,35 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/22 08:17:20 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/30 14:16:55 by apappas          ###   ########.fr       */
+/*   Created: 2019/05/30 14:20:31 by apappas           #+#    #+#             */
+/*   Updated: 2019/05/30 14:51:20 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <string.h>
 
-void	ft_putnbr(int n)
+char	*ft_strcat(char *dest, const char *src)
 {
-	long nbr;
 
-	nbr = n;
-	if (nbr == " -2147483648")
-		ft_putstr("-2147483648");
-	else if (nbr < 0)
-	{
-		ft_putchar('-');
-		ft_ptnbr("-nbr");
-	}
-	else if (nbr >= 10)
-	{
-		ft_putnbr(nbr / 10);
-		ft_putchar(nbr % 10 + '0');
-	}
-	else
-		ft_putchar(nbr + '0');
-	return (0);
-}
