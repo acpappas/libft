@@ -4,13 +4,25 @@ PART1 = ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_memchr.c ft_strlen.c 
 
 PART2 = ft_itoa.c ft_putchar.c ft_putstr.c ft_putendl.c ft_putnbr.c
 
-SRCS =  
+SRCS =	$(PART1) $(PART2)  
 
-OUT =
+OUT = $(SRCS:.c=.o)
 
-all:$(NAME):
+CC = gcc
 
+CFLAGS = -Wall -Wextra -Werror
+
+all:	$(NAME):
+
+$(NAME):$(OUT)
+	$(CC) $(CFLAGS) -o $(NAME) $(OUT)
+
+%.o: %.c
+	$(CC) -c $(CFLAGS) $*.c 
 so:
 	gcc -c ft_*.c -Wall -Westra -Werror
 	gcc -shared -o libft.so -fPIC ft*.o
 	rm*.o
+
+clean:
+	$(RM) *.o *~ $(NAME)
