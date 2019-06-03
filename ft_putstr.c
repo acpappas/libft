@@ -21,5 +21,4 @@ void	ft_putstr(char const *s)
 		ft_putchar(s[i]);
 		i++;
 	}
-	return (0);
 }

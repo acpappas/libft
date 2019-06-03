@@ -19,7 +19,7 @@ char	*ft_strcpy(char *dest, const char *src)
 	*d = dest;
 	while (*src != '\0')
 	{
-		*d == *s;
+		*d == *src;
 		*d++;
 		*src++;
 	}

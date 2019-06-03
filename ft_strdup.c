@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
+#include <stdlib.h>
+
+size_t	ft_strlen(const char *s);
+
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 
 char	*ft_strdup(const char *s)
@@ -19,7 +24,7 @@ char	*ft_strdup(const char *s)
 
 	len = ft_strlen(s) + 1;
 	dup = (char *)malloc(len);
-	if (dup == '\0')
+	if (*dup == '\0')
 		return (NULL);
 	ft_memcpy(dup, s, len);
 	return (dup);

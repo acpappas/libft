@@ -11,23 +11,28 @@ SRCS=		$(PART1) $(PART2)
 
 OBJS=		$(SRCS:.c=.o)
 
+HEAD=		libft.h
+
+GHEAD=		libft.h.gch
+
 CC=		gcc
 
 CFLAGS=		-Wall -Wextra -Werror
 
-all:		$(NAME):
+all:		$(NAME)
 
 $(NAME):	
-		$(CC) $(CFLAGS) -c $(SRCS)
-		$(CC) $(CFLAGS) -o $(NAME) $(OBJS) 
+		$(CC) $(CFLAGS) -c $(SRCS) $(HEAD)
+		ar rc $(NAME) -o $(OBJS) $(GHEAD)
+		ranlib $(NAME) 
 so:
 		gcc -c ft_*.c -Wall-Westra-Werror
 		gcc -shared -o libft.so -fPIC ft*.o
 		rm*.o
 
 clean:
-		$(RM) *.o *~ $(NAME)
+		/bin/rm -f $(OBJS) $(GHEAD)
 
-fclean:
+fclean:		clean $(NAME)
 
-re:
+re:		fclean all

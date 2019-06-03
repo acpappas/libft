@@ -17,12 +17,12 @@ void	ft_putnbr(int n)
 	long nbr;
 
 	nbr = n;
-	if (nbr == " -2147483648")
+	if (nbr == "-2147483648")
 		ft_putstr("-2147483648");
 	else if (nbr < 0)
 	{
 		ft_putchar('-');
-		ft_ptnbr("-nbr");
+		ft_putnbr("-nbr");
 	}
 	else if (nbr >= 10)
 	{
@@ -31,5 +31,4 @@ void	ft_putnbr(int n)
 	}
 	else
 		ft_putchar(nbr + '0');
-	return (0);
 }

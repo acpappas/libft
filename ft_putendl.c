@@ -14,5 +14,6 @@ void	ft_putstr(char const *s);
 
 void	ft_putendl(char const *s)
 {
-	ft_putstr(s, '\n');
+	ft_putstr(s);
+	ft_putstr('\n');
 }

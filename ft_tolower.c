@@ -15,8 +15,8 @@ int	islower(int c)
 	int a;
 
 	a = 0;
-	if (c >= "A" && <= "Z")
-		a = c + 32
+	if (c >= 'A' && <= 'Z')
+		a = c + 32;
 	return(a);
 
 	else

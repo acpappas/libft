@@ -12,11 +12,11 @@
 
 int ft_toupper(int c)
 {
-	int a
+	int a;
 
 	a = 0;
-	if (c >= "a" && <= "z")
-		a = c - 32
+	if (c >= 'a' && <= 'z')
+		a = c - 32;
 	return(a);
 	
 	else

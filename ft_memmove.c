@@ -10,30 +10,28 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
+#include "libft.h"
+
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char *srcptr;
-	char *destptr;
+	const char *s;
+	char *d;
 
-	*srcptr = (char *)src;
-	*destptr = (char *)dest;
-	if (destptr < srcptr)
-		while (n)
-		{
-			*destptr = *srcptr;
-			*destptr++;
-			*srcptr++;
-			n--;
-		}
-	else if (srcptr < destptr && destptr < srcptr + n)
+	s = (char *)src;
+	d = (char *)dest;
+	if (d <= s)
+		ft_memcpy(d, s, n);
+	else
 	{
-		srcptr += (n + 1);
-		destptr += (n + 1);
-		while (n--)
+		s += (n - 1);
+		d += (n - 1);
+		while (n > 0)
 		{
-			*destptr = *srcptr;
-			*destptr--;
-			*srcptr--;
+			*d = *s;
+			d--;
+			s--;
+			n--;
 		}
 	}
 	return (dest);

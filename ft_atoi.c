@@ -17,7 +17,7 @@ int	ft_sign(char nptr)
 	if (nptr == '-' || nptr == '+')
 		if (nptr == '-')
 			return (-1);
-		return(1);
+	return(1);
 }
 
 int	ft_atoi(const char *nptr)
