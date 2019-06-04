@@ -1,33 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_ispunct.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/04 11:44:57 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/04 11:58:41 by apappas          ###   ########.fr       */
+/*   Created: 2019/06/04 12:54:38 by apappas           #+#    #+#             */
+/*   Updated: 2019/06/04 13:09:47 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-void *memchr(const void *s, int c, size_t n)
+int	ispunct(int c)
 {
-	c = (unsigned char)c
-	size_t	i;
-	char *ptr;
-
-	ptr = 0;
-	i = 0;
-	while (s[i] != c && s[i] != '\0')
-		i++;
-		ptr++;
-	if (s[i] == c)
-		return(ptr);
-	else
-		ptr = '\0';
-	return(ptr);
-}
-	
-		
+	 
