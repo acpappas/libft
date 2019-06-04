@@ -6,12 +6,12 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 08:14:52 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/29 13:31:55 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/04 09:56:40 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
-#include <stdlib.h>
+#include "libft>h"
 
 size_t	ft_strlen(const char *s);
 

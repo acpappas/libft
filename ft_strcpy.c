@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 14:19:15 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/29 14:23:05 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/04 08:43:13 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@ char	*ft_strcpy(char *dest, const char *src)
 {
 	char *d;
 
-	*d = dest;
+	d = dest;
 	while (*src != '\0')
 	{
-		*d == *src;
-		*d++;
-		*src++;
+		*d = *src;
+		d++;
+		src++;
 	}
-	*d == '\0';
+	*d = '\0';
 	return (dest);
 }

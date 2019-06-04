@@ -6,11 +6,12 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 11:26:23 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/30 16:10:19 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/04 09:21:00 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include "libft.h"
 
 int	ft_sign(char nptr)
 {

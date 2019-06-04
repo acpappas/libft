@@ -6,14 +6,16 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 09:16:29 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/28 09:20:18 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/04 09:49:48 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_isalnum(int c)
 {
 	if (ft_isdigit(c) && ft_isalpha(c))
-		return (0);
+		return (1);
 	else
-		return();
+		return(0);
 }

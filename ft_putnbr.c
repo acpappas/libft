@@ -6,23 +6,23 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 08:17:20 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/30 14:16:55 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/04 09:10:30 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include "libft.h"
 
 void	ft_putnbr(int n)
 {
 	long nbr;
 
 	nbr = n;
-	if (nbr == "-2147483648")
+	if (nbr == -2147483648)
 		ft_putstr("-2147483648");
 	else if (nbr < 0)
 	{
 		ft_putchar('-');
-		ft_putnbr("-nbr");
+		ft_putnbr(-nbr);
 	}
 	else if (nbr >= 10)
 	{

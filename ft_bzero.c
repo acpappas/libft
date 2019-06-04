@@ -6,13 +6,12 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 08:50:16 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/22 08:59:28 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/04 09:38:04 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
-
-void	*ft_memset(void *b, int c, size_t len);
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

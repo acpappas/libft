@@ -6,14 +6,14 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 09:20:36 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/28 09:23:28 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/04 09:50:44 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int c)
 {
 	if (c is between 0 and octal 0177 inclusive)
-		return 0?
+		return (1);
 	else 
-		return?
+		return(0);
 }

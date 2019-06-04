@@ -6,14 +6,14 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 09:01:46 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/22 09:02:59 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/04 08:57:03 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putstr(char const *s);
+#include "libft.h"
 
 void	ft_putendl(char const *s)
 {
 	ft_putstr(s);
-	ft_putstr('\n');
+	ft_putstr("\n");
 }

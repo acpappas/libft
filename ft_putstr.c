@@ -6,17 +6,18 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 09:00:33 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/28 08:40:38 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/04 09:03:19 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include "libft.h"
 
 void	ft_putstr(char const *s)
 {
 	int i;
 
-	while (i != '\0')
+	i = 0;
+	while (s[i] != '\0')
 	{
 		ft_putchar(s[i]);
 		i++;
