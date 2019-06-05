@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-int	isprint(int c)
+int	ft_isprint(int c)
 {
-	if (c(isalnum) || c(ispunct) || c == " ")
+	if (ft_isalnum(c) || ft_ispunct(c) || c == " ")
 		return(1);
 	else
 		return(0);

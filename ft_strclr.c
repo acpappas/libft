@@ -22,5 +22,4 @@ void	ft_strclr(char *s)
 		s[i] = '\0';
 		i++;
 	}
-	return (0);
 }

@@ -15,10 +15,11 @@ int	islower(int c)
 	int a;
 
 	a = 0;
-	if (c >= 'A' && <= 'Z')
+	if (c >= 'A' && c <= 'Z')
+	{
 		a = c + 32;
-	return(a);
-
+		return(a);
+	}
 	else
 	return(c);
 }

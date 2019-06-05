@@ -11,7 +11,8 @@
 /* ************************************************************************** */
 
 #include <string.h>
-#include "libft>h"
+#include "libft.h"
+#include <stdlib.h>
 
 size_t	ft_strlen(const char *s);
 

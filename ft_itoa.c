@@ -12,6 +12,7 @@
 
 #include <string.h>
 #include "libft.h"
+#include <stdlib.h>
 
 char	*ft_itoa(int n)
 {
@@ -20,10 +21,10 @@ char	*ft_itoa(int n)
 
 	i = 0;
 if(n)
-i = ft_intlen(n);
+{
+	i = ft_intlen(n);
 
-*res = ((char *)malloc(sizeof(char)(i + 1);
-
+	*res = ((char *)malloc(sizeof((char)(i + 1))));
+}
 return (res);
 }
-

@@ -15,8 +15,8 @@ int	ft_isspace(int c)
 	int i;
 
 	i = 0;
-	while (c == "\t" "\n" "\v" "\f" "\r" " ")
+	while (c == "\t" || "\n" || "\v" || "\f" || "\r" || " ")
 		i++;
 	return (i);
-	return (0);
+return (0);
 }
