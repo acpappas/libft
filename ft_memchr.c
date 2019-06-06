@@ -22,10 +22,12 @@ void *memchr(const void *s, int c, size_t n)
 	src = (unsigned char*)s; 
 	chr = (unsigned char)c;
 	ptr = 0;
-	i =	0;
+	i = 0;
 	while (src[i] != chr && i != n)
+	{
 		i++;
 		ptr++;
+	}
 	if (src[i] == chr)
 		return(ptr);
 	else

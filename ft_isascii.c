@@ -12,7 +12,7 @@
 
 int	ft_isascii(int c)
 {
-	if (c is between 0 and octal 0177 inclusive)
+	if (c >= 0 && c <= 127)
 		return (1);
 	else 
 		return(0);

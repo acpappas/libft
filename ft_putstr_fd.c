@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <string.h>
+#include "libft.h"
 
 void	ft_putstr_fd(char const *s, int fd)
 {
@@ -21,5 +22,4 @@ void	ft_putstr_fd(char const *s, int fd)
 	{
 		ft_putchar_fd(s[i], fd);
 	}
-	return(0);
 }

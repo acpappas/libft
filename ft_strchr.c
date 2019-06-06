@@ -10,8 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *s, int c)
-{
-	char	f;
-	size_t	i;
+#include <string.h>
 
+char	*ft_strchr(const char *s, int c)
+{	
+	char *str;
+	
+	str = NULL;
+	while (*s != '\0')
+	{
+		if (*s == (char)c)
+			str = (char *)s;
+		s++;
+	}
+	if (*s == (char)c)
+		return ((char *)s);
+	return (str);
+}

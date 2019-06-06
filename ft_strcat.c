@@ -20,14 +20,14 @@ char	*ft_strcat(char *dest, const char *src)
 	j = 0;
 	i = 0;
 	if(dest)
-		while (src != '\0')
+		while (*src != '\0')
 			i++;
-	while(dest != '\0')
+	while(*dest != '\0')
 	{
 		i++;
-		src[i] = dest[j];
+		dest[i] = src[j];
 		j++;
 	}
-	src[i + 1] = '\0';
-return(src);
+	dest[i + 1] = '\0';
+return(dest);
 }

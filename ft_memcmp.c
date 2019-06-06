@@ -10,19 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
+
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	char	*ptr;
-	int		i;
-
-	i = 0;
-	ptr = 0;
-	while (sa[i] == sb[i] && i < n)
-		i++;
-	if (sa == sb)
-		return(0);
-	else if (sa[i] < sb[i])
-		return(-1);
-	else if (sa[i] > sb[i])
-		return(1);
+	const unsigned char	*sa;
+	const unsigned char	*sb;
+	
+	sa = (const unsigned char *)s1;
+	sb = (const unsigned char *)s2;
+	while (*sa == *sb && n > 0)
+	{
+		sa++;
+		sb++;
+		n--;
+	}
+	if (*sa != *sb)
+		return(*sa - *sb);
+	else
+	return(0);
 }

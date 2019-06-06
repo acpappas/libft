@@ -13,7 +13,7 @@
 #include <string.h>
 #include "libft.h"
 
-int	ft_sign(char nptr)
+static int	ft_sign(char nptr)
 {
 	if (nptr == '-' || nptr == '+')
 		if (nptr == '-')
