@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/28 09:31:47 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/06 10:46:09 by apappas          ###   ########.fr       */
+/*   Created: 2019/06/06 08:49:22 by apappas           #+#    #+#             */
+/*   Updated: 2019/06/06 09:05:43 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	islower(int c)
-{
-	int a;
+#include <string.h>
+#include <stdlib.h>
 
-	a = 0;
-	if (c >= 'A' && c <= 'Z')
+char	*ft_strnew(size_t size)
+{
+	char	*str;
+	size_t	i;
+
+	i = 0;
+	str = (char *)malloc(size + 1);
+	
+	while (i < size + 1)
 	{
-		a = c + 32;
-		return(a);
+		str[i] = '\0';
+		i++;
 	}
-	else
-	return(c);
+	return(str);
 }
