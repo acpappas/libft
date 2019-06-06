@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 09:03:41 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/04 08:49:29 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/06 11:46:56 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	d = dst;
 	s = src;
+	if (dst == '\0')
+		return(NULL);
 	while (n > 0)
 	{
 		*d = *s;

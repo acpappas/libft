@@ -6,18 +6,19 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 09:07:15 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/06 09:09:33 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/06 11:47:34 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memalloc(size_t size)
 {
 	void *ptr;
 
 	ptr = (void *)(malloc)(size);
+	ft_memset(ptr, 0, size);
 	return(ptr);
 }
 

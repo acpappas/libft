@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 11:44:57 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/06 09:10:42 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/06 13:19:33 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,22 @@
 
 void *memchr(const void *s, int c, size_t n)
 {
-	c = (unsigned char)c;
-	size_t	i;
-	char *ptr;
+	char		*ptr;
+	size_t		i;
+	char		chr;
+	unsigned char* src;
 
+	src = (unsigned char*)s; 
+	chr = (unsigned char)c;
 	ptr = 0;
-	i = 0;
-	while (s[i] != c && s[i] != '\0')
+	i =	0;
+	while (src[i] != chr && i != n)
 		i++;
 		ptr++;
-	if (s[i] == c)
+	if (src[i] == chr)
 		return(ptr);
 	else
-		ptr = '\0';
-	return(ptr);
+	return(NULL);
 }
 	
 		
