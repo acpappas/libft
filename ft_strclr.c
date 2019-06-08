@@ -11,15 +11,15 @@
 /* ************************************************************************** */
 
 #include <string.h>
+#include "libft.h"
 
 void	ft_strclr(char *s)
 {
-	int i;
+	size_t	l;
 
-	i = 0;
-	while (s[i] != '\0')
+	if (s != NULL)
 	{
-		s[i] = '\0';
-		i++;
+		l = ft_strlen(s);
+		ft_bzero(s, l);
 	}
 }

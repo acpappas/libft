@@ -16,10 +16,12 @@
 void	*ft_memalloc(size_t size)
 {
 	void *ptr;
-
+	
+	ptr = NULL;
 	ptr = (void *)(malloc)(size);
-	ft_memset(ptr, 0, size);
-	return(ptr);
+	if (ptr)
+		ft_memset(ptr, 0, size);
+return(ptr);
 }
 
 

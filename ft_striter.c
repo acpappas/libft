@@ -10,9 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
+
 void	ft_striter(char *s, void (*f)(char *))
 {
-	while(*s != '\0' && f)
+	if (s == NULL || f == NULL)
+		return ;
+	while(s && *s)
 	{
 		f(s);
 		s++;

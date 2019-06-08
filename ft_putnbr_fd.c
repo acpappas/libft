@@ -14,20 +14,20 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	long nbr;
+	long int nbr;
 	
-	nbr = n;
+	nbr = (long int)n;
 	if (nbr == -2147483648)
-		ft_putstr_fd("-2147483649", fd);
+		ft_putstr_fd("-2147483648", fd);
 	else if (nbr < 0)
 	{
 		ft_putchar_fd('-', fd);
-		ft_putnbr_fd(-nbr, fd);
+		nbr *= -1;
 	}
 	else if (nbr >= 10)
 	{
 	ft_putnbr_fd(nbr / 10, fd);
-	ft_putchar_fd(nbr % 10 + '0', fd);
+	ft_putchar_fd((nbr % 10) + '0', fd);
 	}
 	else
 		ft_putchar_fd(nbr + '0', fd);

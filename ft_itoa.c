@@ -17,16 +17,29 @@
 char	*ft_itoa(int n)
 {
 	char	*res;
-	int	i;
-
-	i = 0;
-if(n)
-{
+	size_t	i;
+	int	neg;
+	
+	neg = 0;
 	i = ft_intlen(n);
-
-	res = ((char *)malloc((char)(i + 1)));
-	return(res);
-}
-else
-return(NULL);
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	if (n == 0)
+		return ("0");
+	res = (ft_strnew(i));
+	if (!res)
+		return (NULL);
+	if (n < 0)
+	{
+		neg = 1;
+		n = -n;
+	}
+	while (i)
+	{
+		res[--i] = (n % 10) + '0';
+		n /= 10;
+	}
+	if (neg)
+	res[0] = '-';
+return (res);
 }

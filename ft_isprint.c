@@ -14,7 +14,7 @@
 
 int	ft_isprint(int c)
 {
-	if (ft_isalnum(c) || ft_ispunct(c) || c == ' ')
+	if (c >= 32 && c <= 126)
 		return(1);
 	else
 		return(0);
