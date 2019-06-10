@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/06/10 11:04:49 by apappas           #+#    #+#             */
+/*   Updated: 2019/06/10 12:03:57 by apappas          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
@@ -15,4 +27,3 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	}
 	return (NULL);
 }
-	

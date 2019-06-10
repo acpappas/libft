@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 08:11:49 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/06 11:35:32 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/10 11:19:04 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	const char *s;
-	char *d;
+	const char	*s;
+	char		*d;
 
 	s = (char *)src;
 	d = (char *)dest;

@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 12:06:26 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/30 12:07:46 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/10 12:02:30 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_putnbr_fd(int n, int fd)
 {
 	long int nbr;
-	
+
 	nbr = (long int)n;
 	if (nbr == -2147483648)
 		ft_putstr_fd("-2147483648", fd);
@@ -26,10 +26,9 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	else if (nbr >= 10)
 	{
-	ft_putnbr_fd(nbr / 10, fd);
-	ft_putchar_fd((nbr % 10) + '0', fd);
+		ft_putnbr_fd(nbr / 10, fd);
+		ft_putchar_fd((nbr % 10) + '0', fd);
 	}
 	else
 		ft_putchar_fd(nbr + '0', fd);
 }
-	

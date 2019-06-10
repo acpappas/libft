@@ -6,19 +6,19 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 11:44:57 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/06 13:19:33 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/10 12:05:06 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void *ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	chr;
 	unsigned char	*src;
 
-	src = (unsigned char*)s; 
+	src = (unsigned char*)s;
 	chr = (unsigned char)c;
 	i = 0;
 	while (n)
@@ -28,7 +28,5 @@ void *ft_memchr(const void *s, int c, size_t n)
 		i++;
 		n--;
 	}
-	return(NULL);
+	return (NULL);
 }
-	
-		

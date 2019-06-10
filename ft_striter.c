@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 09:11:07 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/06 15:27:57 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/10 11:21:18 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,9 @@ void	ft_striter(char *s, void (*f)(char *))
 {
 	if (s == NULL || f == NULL)
 		return ;
-	while(s && *s)
+	while (s && *s)
 	{
 		f(s);
 		s++;
 	}
 }
-

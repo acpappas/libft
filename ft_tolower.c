@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 09:31:47 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/06 10:46:09 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/10 11:29:50 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ int	ft_tolower(int c)
 	if (c >= 'A' && c <= 'Z')
 	{
 		a = c + 32;
-		return(a);
+		return (a);
 	}
 	else
-	return(c);
+		return (c);
 }

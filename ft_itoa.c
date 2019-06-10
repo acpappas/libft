@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 09:52:44 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/06 13:53:20 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/10 12:05:57 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ char	*ft_itoa(int n)
 {
 	char	*res;
 	size_t	i;
-	int	neg;
-	
+	int		neg;
+
 	neg = 0;
 	i = ft_intlen(n);
 	if (n == -2147483648)
@@ -40,6 +40,6 @@ char	*ft_itoa(int n)
 		n /= 10;
 	}
 	if (neg)
-	res[0] = '-';
-return (res);
+		res[0] = '-';
+	return (res);
 }

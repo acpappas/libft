@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:20:31 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/06 13:45:09 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/10 11:24:09 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@ char	*ft_strcat(char *dest, const char *src)
 	j = 0;
 	i = 0;
 	while (dest[i] != '\0')
-			i++;
-	while(src[j] != '\0')
+		i++;
+	while (src[j] != '\0')
 	{
 		dest[i] = src[j];
 		i++;
 		j++;
 	}
 	dest[i] = '\0';
-return(dest);
+	return (dest);
 }

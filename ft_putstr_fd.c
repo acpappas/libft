@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 11:59:10 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/04 09:54:47 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/10 11:34:41 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,4 @@ void	ft_putstr_fd(char const *s, int fd)
 {
 	if (s && fd)
 		write(fd, s, ft_strlen(s));
-	
 }

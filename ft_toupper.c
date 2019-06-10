@@ -6,11 +6,11 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 09:25:52 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/28 09:31:34 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/10 11:56:14 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	int a;
 
@@ -18,10 +18,8 @@ int ft_toupper(int c)
 	if (c >= 'a' && c <= 'z')
 	{
 		a = c - 32;
-		return(a);
+		return (a);
 	}
 	else
-	return(c);
-	
+		return (c);
 }
-

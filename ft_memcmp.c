@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 12:16:42 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/06 13:33:02 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/10 12:04:17 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*sa;
 	const unsigned char	*sb;
-	
+
 	sa = (const unsigned char *)s1;
 	sb = (const unsigned char *)s2;
 	while (n > 0)
@@ -27,5 +27,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		sb++;
 		n--;
 	}
-	return(0);
+	return (0);
 }

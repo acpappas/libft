@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 15:41:05 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/06 16:01:48 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/10 11:37:01 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ int	ft_strcmp(const char *s1, const char *s2)
 	{
 		str1++;
 		str2++;
-	if (*str1 == 0 && *str2 == 0)
-		return(0);
+		if (*str1 == 0 && *str2 == 0)
+			return (0);
 	}
-return (*str1 < *str2 ? -1 : 1);
+	return (*str1 < *str2 ? -1 : 1);
 }
