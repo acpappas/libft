@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 11:06:36 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/10 11:32:03 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/10 15:49:55 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,10 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		s2++;
 		n--;
 	}
-	return ((unsigned char)*s1 - (unsigned char)*s2);
+	if ((unsigned char)*s1 - (unsigned char)*s2 < 0)
+		return (-1);
+	else if ((unsigned char)*s1 - (unsigned char)*s2 > 0)
+		return (1);
+	else
+		return (0);
 }
