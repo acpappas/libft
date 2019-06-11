@@ -14,9 +14,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char *str;
+	char *nptr;
 
-	str = NULL;
+	nptr = NULL;
 	while (*s != '\0')
 	{
 		if (*s == c)
@@ -25,5 +25,5 @@ char	*ft_strchr(const char *s, int c)
 	}
 	if (*s == c)
 		return ((char *)s);
-	return (str);
+	return (nptr);
 }
