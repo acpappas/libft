@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 11:05:34 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/10 12:03:31 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/12 08:23:21 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	while (s2[j] != '\0')
 	{
-		str[i] = s2[j];
-		i++;
-		j++;
+		str[i++] = s2[j++];
 	}
 	str[i] = '\0';
 	return (str);
