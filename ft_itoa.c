@@ -6,13 +6,11 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 09:52:44 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/10 14:56:22 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/13 15:04:31 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_itoa(int n)
 {
