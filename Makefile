@@ -12,6 +12,8 @@ PART2 =		ft_memalloc.c ft_memdel.c ft_strnew.c ft_strdel.c ft_strclr.c \
 		ft_putchar.c ft_putstr.c ft_putendl.c ft_putnbr.c ft_putchar_fd.c \
 		ft_putstr_fd.c ft_putnbr_fd.c ft_putendl_fd.c
 
+PART3 =		ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c
+
 EXTRAS =	ft_intlen.c ft_isspace.c
 
 SRCS =		$(PART1) $(PART2) $(EXTRAS)  
