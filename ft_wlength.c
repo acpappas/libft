@@ -12,14 +12,14 @@
 
 #include "libft.h"
 
-int	ft_wcount(char *str, char delim)
+int	ft_wlength(const char *str, char delim)
 {
-	int	i;
+	int i;
 
 	i = 0;
 	if (!*str)
-		return (NULL);
-	while (str[i] != delim)
+		return (0);
+	while (str[i] != delim && str[i] != '\0')
 		i++;
 	return (i);
 }

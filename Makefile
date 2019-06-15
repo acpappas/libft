@@ -16,7 +16,7 @@ PART3 =		ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstm
 
 EXTRAS =	ft_intlen.c ft_isspace.c
 
-SRCS =		$(PART1) $(PART2) $(EXTRAS)  
+SRCS =		$(PART1) $(PART2) $(PART3) $(EXTRAS)  
 
 OBJS =		$(SRCS:.c=.o)
 

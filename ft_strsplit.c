@@ -22,9 +22,19 @@ char	**ft_strsplit(char const *s, char c)
 	if (!s || !c)
 		return (NULL);
 	count = ft_wcount(s, c);
-	splstrs = ((char **)malloc(sizeof(char *) * (count + 1)));
-	if (splstrs == NULL)
+	splstr = ((char **)malloc(sizeof(char *) * (count + 1)));
+	if (splstr == NULL)
 		return (NULL);
 	while (i < count)
 	{
-		
+		while (*s == c && *s)
+			s++;
+		splstr[i] = (char *)malloc(sizeof(char) * (ft_wlength(s, c) + 1));
+		while (*s != c && *s)
+			*splstr[i]++ = *s++;
+		*splstr[i] = '\0';
+		i++;
+	}
+	splstr[i] = '\0';
+	return (splstr);
+}
