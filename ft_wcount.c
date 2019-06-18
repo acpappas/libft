@@ -17,16 +17,15 @@ int	ft_wcount(const char *str, char delim)
 	int count;
 
 	count = 0;
-	while (*str)
-	{
 	while (*str == delim)
 		str++;
-	if (*str != delim)
+	while (*str)
 	{
-		count++;
-		while (*str != delim && *str)
+	while (*str != delim && *str)
 		str++;
-	}
+	while (*str == delim)
+		str++;
+	count++;
 	}
 	return (count);
 }

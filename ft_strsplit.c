@@ -18,6 +18,7 @@ char	**ft_strsplit(char const *s, char c)
 	int	count;
 	int	i;
 
+	i = 0;
 	count = 0;
 	if (!s || !c)
 		return (NULL);
