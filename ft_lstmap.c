@@ -5,13 +5,9 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/14 10:09:03 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/14 10:10:23 by apappas          ###   ########.fr       */
+/*   Created: 2019/06/17 14:34:26 by apappas           #+#    #+#             */
+/*   Updated: 2019/06/17 14:34:27 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 
-t_list	*lstmap(t_list *lst, t_list *(*f)(t_list *elem))
-{
-}

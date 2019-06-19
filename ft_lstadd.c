@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/14 10:06:31 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/14 10:07:25 by apappas          ###   ########.fr       */
+/*   Created: 2019/06/17 14:12:56 by apappas           #+#    #+#             */
+/*   Updated: 2019/06/17 14:20:37 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,4 +14,9 @@
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {
+	if (*alst != NULL)
+	{
+		new->next = *alst;
+		*alst = new;
+	}
 }

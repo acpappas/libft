@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/13 14:56:02 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/13 14:56:04 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/17 12:21:48 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,10 @@
 char	**ft_strsplit(char const *s, char c)
 {
 	char	**splstr;
-	int	count;
-	int	i;
+	int		count;
+	int		i;
 
+	i = 0;
 	count = 0;
 	if (!s || !c)
 		return (NULL);
@@ -35,6 +36,6 @@ char	**ft_strsplit(char const *s, char c)
 		*splstr[i] = '\0';
 		i++;
 	}
-	splstr[i] = '\0';
+	*splstr[i] = '\0';
 	return (splstr);
 }

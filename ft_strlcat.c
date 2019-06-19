@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 08:08:16 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/12 08:46:41 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/19 08:16:01 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		i++;
 		len++;
 	}
-	while (src[j] && len < dstsize)
+	while (src[j] && len + 1 < dstsize)
 	{
-		dst[i] = src[j];
-		i++;
+		dst[len] = src[j];
 		j++;
 		len++;
 	}
 	if (len < dstsize)
-		dst[i] = '\0';
-	return (len);
+		dst[len] = '\0';
+	return (i + ft_strlen(src));
 }

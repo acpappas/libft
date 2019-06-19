@@ -5,13 +5,9 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/14 10:05:22 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/14 10:06:16 by apappas          ###   ########.fr       */
+/*   Created: 2019/06/17 14:33:43 by apappas           #+#    #+#             */
+/*   Updated: 2019/06/17 14:33:46 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 
-void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
-{
-}

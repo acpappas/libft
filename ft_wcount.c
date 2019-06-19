@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/13 14:56:13 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/13 14:56:22 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/19 08:07:38 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,15 @@ int	ft_wcount(const char *str, char delim)
 	int count;
 
 	count = 0;
-	while (*str)
-	{
 	while (*str == delim)
 		str++;
-	if (*str != delim)
+	while (*str)
 	{
-		count++;
 		while (*str != delim && *str)
-		str++;
-	}
+			str++;
+		while (*str == delim)
+			str++;
+		count++;
 	}
 	return (count);
 }
