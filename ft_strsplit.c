@@ -12,30 +12,35 @@
 
 #include "libft.h"
 
-char	**ft_strsplit(char const *s, char c)
+char                    **ft_strsplit(char const *s, char c)
 {
-	char	**splstr;
-	int	count;
-	int	i;
+         int             count;
+         char            **splstr;
 
-	i = 0;
-	count = 0;
-	if (!s || !c)
-		return (NULL);
-	count = ft_wcount(s, c);
-	splstr = ((char **)malloc(sizeof(char *) * (count + 1)));
-	if (splstr == NULL)
-		return (NULL);
-	while (i < count)
-	{
-		while (*s == c && *s)
-			s++;
-		splstr[i] = (char *)malloc(sizeof(char) * (ft_wlength(s, c) + 1));
-		while (*s != c && *s)
-			*splstr[i]++ = *s++;
-		*splstr[i] = '\0';
-		i++;
-	}
-	splstr[i] = '\0';
-	return (splstr);
+ 
+        if (!s)
+                 return (NULL);
+         count = ft_wcount(s, c);
+         splstr = (char **)malloc(sizeof(char *) * (count + 1));
+         if (splstr == NULL)
+                 return (NULL);
+        count = 0;
+         while (*s)
+         {
+                 while (*s == c && *s != '\0')
+                         s++;       
+                 splstr[count]  = (char *)malloc(sizeof(char) * (ft_wlength(s, c) + 1));
+                 
+                 while (*s != c && *s)
+                 {
+                         *(*(splstr + count)) = *s;
+                         *(splstr + count) += 1;
+                         s++;
+                 }
+                 *(*(splstr + count)) = '\0';
+                 count++;
+                 
+         }
+         *(splstr + count) = 0;
+         return (splstr);
 }
