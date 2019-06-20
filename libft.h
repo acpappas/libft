@@ -6,7 +6,7 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 11:40:36 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/17 12:28:34 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/19 10:28:46 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,8 @@ int					ft_toupper(int c);
 int					ft_tolower(int c);
 
 t_list				*ft_lstnew(void const *content, size_t content_size);
+void				ft_lstadd(t_list **alst, t_list *new);
+void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
 
 int					ft_intlen(int c);
 int					ft_isspace(int c);
