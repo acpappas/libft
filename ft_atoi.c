@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 static int	ft_sign(char nptr)
@@ -30,21 +29,17 @@ int			ft_atoi(const char *nptr)
 	i = 0;
 	res = 0;
 	neg = 1;
+	while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == 32)
+		i++;
 	if (nptr[i] == '-' || nptr[i] == '+')
 	{
-		neg = ft_sign(*nptr);
+		neg = ft_sign(nptr[i]);
 		i++;
 	}
 	while (nptr[i] != '\0' && nptr[i] >= '0' && nptr[i] <= '9')
 	{
-		while (nptr[i] != '\0')
-		{
-			res *= 10;
-			res = res + nptr[i] - '0';
+			res = res * 10 + (nptr[i] - '0');
 			i++;
-		}
-		res *= neg;
-		return (res);
 	}
-	return (0);
+		return (res *= neg);
 }
