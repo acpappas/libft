@@ -6,12 +6,11 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 12:11:21 by apappas           #+#    #+#             */
-/*   Updated: 2019/05/30 12:17:58 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/24 08:40:16 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
+#include "libft.h"
 
 void	ft_memdel(void **ap)
 {
