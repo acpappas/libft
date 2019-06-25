@@ -12,13 +12,15 @@
 
 #include "libft.h"
 
+/*while the list exists pass the link to the function then
+**set pointer to next link
+*/
+
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	if (lst == NULL || f == NULL)
-		return ;
-	while (lst != NULL)
+	while (lst)
 	{
-		(*f)(lst);
+		f(lst);
 		lst = lst->next;
 	}
 }

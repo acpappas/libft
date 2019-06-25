@@ -22,11 +22,10 @@ char	*ft_itoa(int n)
 	i = ft_intlen(n);
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
-	if (n == 0)
-		return (ft_strdup("0"));
 	res = (ft_strnew(i));
 	if (!res)
 		return (0);
+	res[i] = '0';
 	if (n < 0)
 	{
 		neg = 1;

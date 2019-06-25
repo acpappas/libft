@@ -12,24 +12,32 @@
 
 #include "libft.h"
 
+/*declare two pointers one to iterate down the list and
+**apply the function and one to point to the head of the list
+**pass the first link to the function, set head to point to 
+**this new link, set lst to next link, while the list exists
+**next link of passed list is passed to the function
+**set lst to next link, set fresh list to next link.
+**Then return pointer to first link of fresh list.
+*/
+
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	t_list	*new;
-	t_list	*list;
+	t_list	*fresh;
+	t_list	*head;
 
-	if (!lst)
+	if (!lst || !f)
 		return (NULL);
-	list = f(lst);
-	new = list;
-	while (lst->next)
+	fresh = f(lst);
+	if (!fresh)
+		return (NULL);
+	head = fresh;
+	lst = lst->next;
+	while (lst)
 	{
+		fresh->next = f(lst);
 		lst = lst->next;
-		if (!(list->next = f(lst)))
-		{
-			free(list->next);
-			return (NULL);
-		}
-		list = list->next;
+		fresh = fresh->next;
 	}
-	return (new);
+	return (head);
 }
