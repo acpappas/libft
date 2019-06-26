@@ -6,15 +6,22 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 11:59:10 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/10 11:34:41 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/26 16:51:03 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putstr_fd(char const *s, int fd)
 {
-	if (s && fd)
-		write(fd, s, ft_strlen(s));
+	int	i;
+
+	i = 0;
+	if (!s || !fd)
+		return ;
+	while (s[i] != '\0')
+	{
+		ft_putchar_fd(s[i], fd);
+		i++;
+	}
 }
