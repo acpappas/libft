@@ -6,24 +6,18 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 09:52:44 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/26 10:24:01 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/27 12:35:51 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itoa(int n)
+static char	*ft_find_res(int n, size_t i)
 {
 	char	*res;
-	size_t	i;
 	int		neg;
 
 	neg = 0;
-	i = ft_intlen(n);
-	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
-	if (n == 0)
-		return (ft_strdup("0"));
 	res = (ft_strnew(i));
 	if (!res)
 		return (0);
@@ -39,5 +33,19 @@ char	*ft_itoa(int n)
 	}
 	if (neg)
 		res[0] = '-';
+	return (res);
+}
+
+char		*ft_itoa(int n)
+{
+	char	*res;
+	size_t	i;
+
+	i = ft_intlen(n);
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	if (n == 0)
+		return (ft_strdup("0"));
+	res = ft_find_res(n, i);
 	return (res);
 }
