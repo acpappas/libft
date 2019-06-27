@@ -6,11 +6,11 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 14:19:15 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/04 08:43:13 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/27 11:21:40 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strcpy(char *dest, const char *src)
 {

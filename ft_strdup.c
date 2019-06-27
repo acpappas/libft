@@ -6,13 +6,11 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 08:14:52 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/06 10:48:03 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/27 11:21:13 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strdup(const char *s)
 {

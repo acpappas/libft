@@ -6,21 +6,21 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 09:06:12 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/10 12:34:35 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/27 11:16:22 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t len)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	char *ptr;
 
 	ptr = s;
-	while (len > 0)
+	while (n > 0)
 	{
 		*ptr = c;
-		len--;
+		n--;
 		ptr++;
 	}
 	return (s);

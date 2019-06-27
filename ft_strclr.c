@@ -6,11 +6,10 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 16:12:34 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/04 09:55:30 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/27 11:05:30 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 void	ft_strclr(char *s)

@@ -6,11 +6,11 @@
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 16:05:49 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/10 12:05:28 by apappas          ###   ########.fr       */
+/*   Updated: 2019/06/27 11:28:07 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
