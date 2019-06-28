@@ -1,35 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstaddlast.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apappas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/12 14:45:03 by apappas           #+#    #+#             */
-/*   Updated: 2019/06/28 12:34:02 by apappas          ###   ########.fr       */
+/*   Created: 2019/06/28 12:27:14 by apappas           #+#    #+#             */
+/*   Updated: 2019/06/28 12:37:06 by apappas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void const *content, size_t content_size)
+t_list	ft_lstaddlast(t_list **alst, void const *content, size_t content_size)
 {
-	t_list *head;
+	t_list	*new;
+	t_list	*temp;
 
-	head = (t_list*)ft_memalloc(sizeof(t_list));
-	if (!head)
-		return (NULL);
-	if (content == NULL)
-	{
-		head->content = NULL;
-		head->content_size = 0;
-	}
+	new = ft_lstnew(content, content_size);
+	if (*alst == NULL)
+		*alst = new;
 	else
 	{
-		head->content = ft_memalloc(content_size);
-		head->content = ft_memcpy(head->content, content, content_size);
-		head->content_size = content_size;
+		temp = *alst;
+		while (temp->next != NULL)
+			temp = temp->next;
 	}
-	head->next = NULL;
-	return (head);
+	temp->next = new;
+	return (*alst);
 }
+
